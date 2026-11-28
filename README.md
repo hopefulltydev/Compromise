@@ -33,6 +33,8 @@ curl -sSfL https://github.com/hopefulltydev/Compromise/releases/latest/install.s
 
 Or grab a prebuilt binary from the [Download page](https://github.com/hopefulltydev/Compromise/releases/latest). See the [Quick Start guide](https://compromise.hopefullty.com/docs/#quick-start) and [Documentation](https://compromise.hopefullty.com/docs/) for setup details.
 
+Prebuilt Linux binaries require glibc. Alpine Linux uses musl, so the binaries do not run on a standard Alpine installation. On an Alpine host with Docker, use the [official Pumpkin container image](https://docs.pumpkinmc.org/#docker), which includes a glibc-based userspace.
+
 ## Goals
 
 - **Performance**: Leveraging multi-threading for maximum speed and efficiency.
